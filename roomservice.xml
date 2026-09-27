@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project path="device/motorola/boston" name="Lunia-LineageOS/android_device_motorola_boston" />
+  <project path="device/motorola/sm7435-common" name="Lunia-LineageOS/android_device_motorola_sm7435-common" />
+  <project path="hardware/motorola" name="Lunia-LineageOS/android_hardware_motorola" />
+  <project path="kernel/motorola/sm7435-devicetrees" name="Lunia-LineageOS/android_kernel_motorola_sm7435-devicetrees" />
+  <project path="kernel/motorola/sm7435-modules" name="Lunia-LineageOS/android_kernel_motorola_sm7435-modules" />
+  <project path="vendor/motorola/boston" name="Lunia-LineageOS/proprietary_vendor_motorola_boston" />
+  <project path="vendor/motorola/sm7435-common" name="TheMuppets/proprietary_vendor_motorola_sm7435-common" />
+</manifest>
