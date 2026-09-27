@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Custom additions -->
+  <remove-project name="LineageOS/android_build" />
+  <remove-project name="LineageOS/android_external_google-fonts_google-sans-flex" />
+  <remove-project name="LineageOS/android_hardware_lineage_generic-ims" />
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <remove-project name="LineageOS/android_lineage-sdk" />
+  <remove-project name="LineageOS/android_packages_apps_Settings" />
+  <remove-project name="LineageOS/android_packages_overlays_Lineage" />
+  <remove-project name="LineageOS/android_vendor_lineage" />
+
+  <project path="build/make" name="Lunia-LineageOS/android_build" groups="pdk,sysui-studio" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="external/google-fonts/google-sans-flex" name="Lunia-LineageOS/android_external_google-fonts_google-sans-flex" />
+  <project path="hardware/lineage/generic-ims" name="LineageOS/android_hardware_lineage_generic-ims" revision="refs/changes/64/506064/1" />
+  <project path="frameworks/base" name="Lunia-LineageOS/android_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+  <project path="lineage-sdk" name="Lunia-LineageOS/android_lineage-sdk" />
+  <project path="packages/apps/Settings" name="Lunia-LineageOS/android_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" />
+  <project path="packages/overlays/Lineage" name="Lunia-LineageOS/android_packages_overlays_Lineage" />
+  <project path="vendor/lineage" name="Lunia-LineageOS/android_vendor_lineage" />
+
+  <!-- Device trees -->
+  <project path="device/google/pantah" name="Lunia-LineageOS/android_device_google_pantah" />
+  <project path="device/google/lynx" name="Lunia-LineageOS/android_device_google_lynx" />
+  <project path="device/google/gs201" name="Lunia-LineageOS/android_device_google_gs201" />
+
+  <!-- Pixel-specific -->
+  <project path="vendor/google/faceunlock" name="Lunia-LineageOS/proprietary_vendor_google_faceunlock" />
+  <project path="vendor/google/repairmode" name="Lunia-LineageOS/proprietary_vendor_google_repairmode" />
+
+  <!-- Universal -->
+  <project path="packages/apps/ColumbusService" name="Lunia-LineageOS/android_packages_apps_ColumbusService" />
+  <project path="vendor/gms" name="Lunia-LineageOS/proprietary_vendor_gms" />
+  <project path="vendor/google/mainline" name="Lunia-LineageOS/proprietary_vendor_google_mainline" />
+  <project path="vendor/unbundled_google/packages/SettingsGoogle" name="Lunia-LineageOS/proprietary_vendor_packages_SettingsGoogle" />
+  <project path="vendor/unbundled_google/packages/SystemUIGoogle" name="Lunia-LineageOS/proprietary_vendor_packages_SystemUIGoogle" />
+</manifest>
